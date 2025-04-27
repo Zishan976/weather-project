@@ -30,6 +30,9 @@ app.post("/", (req, res) => {
         if (apiResponse.statusCode === 200) {
           res.render("result", {
             location: weatherData.name,
+            country: weatherData.sys.country,
+            humidity: weatherData.main.humidity,
+            windSpeed: weatherData.wind.speed,
             temperature: weatherData.main.temp,
             condition: weatherData.weather[0].description,
             icon: weatherData.weather[0].icon,
