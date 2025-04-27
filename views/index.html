@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather News</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #6dd5ed, #2193b0);
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        background: rgba(255, 255, 255, 0.2);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        display: block;
+      }
+      input[type="text"] {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 80%;
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #ff7e5f;
+        color: white;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #feb47b;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/" method="post">
+      <label for="city-name">Type City Name:</label>
+      <input
+        type="text"
+        name="city"
+        id="city-name"
+        placeholder="Enter city name"
+        required
+      />
+      <button type="submit">Go</button>
+    </form>
+  </body>
+</html>
